@@ -6,10 +6,9 @@ import (
 	"github.com/spf13/cobra"
 )
 
-
 var rootCmd = &cobra.Command{
 	Use:   "bk",
-  Short: "Work effortlessly with Buildkite from the command line.",
+	Short: "Work effortlessly with Buildkite from the command line.",
 	Long: `Search pipelines and builds; start and cancel builds; and much more.
 						Built with love by mskelton in Go.`,
 	// Run: func(cmd *cobra.Command, args []string) { },
