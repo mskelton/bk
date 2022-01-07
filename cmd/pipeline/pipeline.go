@@ -1,26 +1,18 @@
 package pipeline
 
 import (
-	"fmt"
-
+	"github.com/mskelton/bk/cmd/pipeline/list"
 	"github.com/spf13/cobra"
 )
 
-func NewPipelineCmd() *cobra.Command {
+func NewCmdPipeline() *cobra.Command {
 	cmd := &cobra.Command{
-		Use:   "pipeline <command>",
+		Use:   "pipeline <command> [flags]",
 		Short: "Manage pipelines",
 		Long:  "Work with Buildkite pipelines",
-		Run: func(cmd *cobra.Command, args []string) {
-			listRun()
-		},
 	}
 
-	cmd.AddCommand(NewCmdList())
+	cmd.AddCommand(list.NewCmdList())
 
 	return cmd
-}
-
-func listRun() {
-	fmt.Println("warning: this query uses the Search API which is capped at 1000 results maximum")
 }

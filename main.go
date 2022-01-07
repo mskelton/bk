@@ -1,9 +1,16 @@
 package main
 
 import (
+	"os"
+
 	"github.com/mskelton/bk/cmd"
 )
 
 func main() {
-	cmd.Execute()
+	cmd := cmd.NewCmdRoot()
+	err := cmd.Execute()
+
+	if err != nil {
+		os.Exit(1)
+	}
 }

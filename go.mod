@@ -2,7 +2,10 @@ module github.com/mskelton/bk
 
 go 1.17
 
-require github.com/spf13/cobra v1.3.0
+require (
+	github.com/MakeNowJust/heredoc v1.0.0
+	github.com/spf13/cobra v1.3.0
+)
 
 require (
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
