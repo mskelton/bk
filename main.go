@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/mskelton/buildkite-cli/cli/cmd"
+	"github.com/mskelton/bk/cmd"
 )
 
 func main() {

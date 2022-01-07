@@ -1,4 +1,4 @@
-module github.com/mskelton/buildkite-cli
+module github.com/mskelton/bk
 
 go 1.17
 
